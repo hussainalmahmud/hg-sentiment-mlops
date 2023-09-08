@@ -1,13 +1,12 @@
 ---
-title: Demo
+title: Demo 
 emoji: 🤗
-colorFrom: "#E6F7FF"
-colorTo: "#1B76E0"
-sdk: streamlit
-sdk_version: "1.0"
-app_file: app.py
-pinned: false
+colorFrom: purple 
+colorTo: purple 
+sdk: gradio 
+idk_version: 3.0.6 
+app_file: app.py 
+pinned: false 
+license: cc
 ---
-
-
 # hugging-face-mlops-demo
