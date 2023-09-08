@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Courier",
+    "redhat.telemetry.enabled": false,
+    "terminal.integrated.fontFamily": "Courier",
+    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.letterSpacing": 0,
+    "terminal.integrated.gpuAcceleration": "canvas",
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Dark+"
+}
