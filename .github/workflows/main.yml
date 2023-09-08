@@ -18,8 +18,8 @@ jobs:
       - name: Add remote
         env:
           HF_TOKEN: ${{ secrets.HUGGINGFACE }}
-        run: git remote add space https://hussainsan:$HUGGINGFACE@huggingface.co/spaces/hussainsan/MLOPs_test
+        run: git remote add space https://hussainsan:$HF_TOKEN@huggingface.co/spaces/hussainsan/MLOPs_test
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HUGGINGFACE }}
-        run: git push --force https://hussainsan:$HUGGINGFACE@huggingface.co/spaces/hussainsan/MLOPs_test main
+        run: git push --force https://hussainsan:$HF_TOKEN@huggingface.co/spaces/hussainsan/MLOPs_test main
