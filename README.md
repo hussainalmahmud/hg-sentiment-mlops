@@ -19,6 +19,23 @@ license: cc
 ```
 
 
+Run the FastAPI application using:
+```
+uvicorn filename:app --reload
+```
+
+Using a Web Browser:
+```
+If you're sending a GET request, you can simply open a web browser and navigate to the endpoint URL 
+(e.g., http://localhost:8000/predict/). However, in our example, we defined a POST endpoint, so we'll need another method.
+```
+
+Using curl:
+You can use the curl command from your terminal:
+```
+curl -X POST "http://localhost:8000/predict/" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"data\":\"YourDataHere\"}"
+```
+
 
 
 ## To use git inside Cloud9
