@@ -12,3 +12,8 @@ license: cc
 [![Sync to Hugging Face hub](https://github.com/hussainsan/hugging-face-mlops-demo/actions/workflows/main.yml/badge.svg)](https://github.com/hussainsan/hugging-face-mlops-demo/actions/workflows/main.yml)
 
 # hugging-face-mlops-demo
+
+## get Sagemaker endpoints
+```
+ aws sagemaker list-endpoints --region your-region-name
+```
