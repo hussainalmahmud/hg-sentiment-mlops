@@ -83,5 +83,3 @@ git commit --amend --reset-author
 ```
 
 ---
-
-I hope these emojis make the README feel more vibrant and engaging!
