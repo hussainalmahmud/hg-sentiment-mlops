@@ -18,10 +18,27 @@ license: cc
  aws sagemaker list-endpoints --region your-region-name
 ```
 
-
-Run the FastAPI application using:
+## export your variables
 ```
-uvicorn filename:app --reload
+# export AWS_ACCESS_KEY_ID='AWS_ACCESS_KEY_ID'
+# export SECRET_KEY='SECRET_KEY'
+# export ENDPOINT_NAME='ENDPOINT_NAME'
+```
+Run the FastAPI application using:
+
+```
+uvicorn app:app --reload
+uvicorn app:app --reload --port 8080
+lsof -i:8080
+
+or 
+
+python app.py
+```
+## to view the FastAPI inside Cloud9:
+```
+Go to Tools > Preview Running Applications 
+
 ```
 
 Using a Web Browser:
@@ -40,11 +57,11 @@ curl -X POST "http://localhost:8000/predict/" -H "accept: application/json" -H "
 
 ## To use git inside Cloud9
 You can suppress this message by setting them explicitly:
-
+```
     git config --global user.name "Your Name"
     git config --global user.email you@example.com
 ```
 After doing this, you may fix the identity used for this commit with:
 ```
-    git commit --amend --reset-author
+git commit --amend --reset-author
 ```
