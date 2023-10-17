@@ -1,5 +1,5 @@
 # Use an official Python runtime as the base image
-FROM python:3.9-slim
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
 # Set environment variables
 # Prevents Python from writing pyc files to disc (equivalent to python -B option)
@@ -19,5 +19,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the content of the local src directory to the working directory
 COPY . .
 
+
+# Make port 8080 available to the world outside this container
+EXPOSE 8080
+
 # Specify the command to run on container start
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
